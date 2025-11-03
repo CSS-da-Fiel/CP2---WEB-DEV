@@ -4,7 +4,10 @@
   --text: #111;
   --muted: #777;
 }
-
+#image{
+    width: 600px;
+    height: 700px;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 body{
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;

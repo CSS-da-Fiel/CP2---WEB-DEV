@@ -1,29 +1,29 @@
-//FUNÇÃO TROCAR
-function trocar(cor){
-  document.body.style.background=cor;  
-}
+// Slideshow
+(() => {
+  const slides = document.querySelectorAll('.slideshow img');
+  if (!slides.length) return;
+  let idx = 0, timer;
 
-//FUNÇÃO SLIDESHOW
+  const show = i => slides.forEach((s, j) => s.classList.toggle('active', i === j));
+  const next = () => show(idx = (idx + 1) % slides.length);
+  const prev = () => show(idx = (idx - 1 + slides.length) % slides.length);
 
-// DECLARANDO UM ARRAY DE IMAGENS
+  timer = setInterval(next, 4000);
 
-let imagens=[
-    "src/assets/garro1.jpg",
-];
+  ['next','prev'].forEach(id => {
+    const btn = document.getElementById(id);
+    if(btn) btn.addEventListener('click', () => {
+      id === 'next' ? next() : prev();
+      clearInterval(timer);
+      timer = setInterval(next, 4000);
+    });
+  });
+})();
 
-//DECLARANDO AS VARIAVEIS
+// Theme color buttons
+document.querySelectorAll('.theme-btn').forEach(btn =>
+  btn.addEventListener('click', () =>
+    document.documentElement.style.setProperty('--accent', btn.dataset.color)
+  )
+);
 
-let i=0;
-let tempo =5000; // milisegundos
-
-//função 
-
-function slideShow(){
-    document.getElementById("image").src=imagens[i];
-    i++;
-    if(i == imagens.length){
-        i=0;
-    }
-    setTimeout(slideShow,tempo)
-}
-slideShow();
