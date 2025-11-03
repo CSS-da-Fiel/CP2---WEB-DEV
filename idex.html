@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Loja do Corinthians</title>
+  <link rel="stylesheet" href="src/css/estilo.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="src/assets/Logo.jpg" alt="Logo Corinthians"/>
+      <h1>Loja do Corinthians</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="pages/sobre.html">Sobre</a></li>
+        <li><a href="pages/produtos.html">Portifólio</a></li>
+        <li><a href="pages/quiz.html">Quiz</a></li>
+        <li><a href="pages/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="slideshow" id="slideshow">
+        <img src="src/assets/imgs/slide1.jpg" alt="Slide 1" class="active">
+        <img src="src/assets/imgs/slide2.jpg" alt="Slide 2">
+        <img src="src/assets/imgs/slide3.jpg" alt="Slide 3">
+        <img src="src/assets/imgs/slide4.jpg" alt="Slide 4">
+        <img src="src/assets/imgs/slide5.jpg" alt="Slide 5">
+        <div class="slide-controls">
+          <button id="prev">◀</button>
+          <button id="next">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="destaques">
+      <h2>Destaques da Semana</h2>
+      <div class="produtos-container">
+        <article class="card">
+          <a href="pages/produtos.html"><img class="img-tabela" src="src/assets/Camisa.jpg" alt="Camisa Corinthians 1"></a>
+          <h3>Camisa Titular 2025</h3>
+          <p>Camisa oficial, tecido respirável, escudo bordado.</p>
+          <p class="preco">R$ 199,90</p>
+          <a class="botao-comprar" href="pages/produtos.html">Comprar</a>
+        </article>
+
+        <article class="card">
+          <a href="pages/produtos.html"><img class="img-tabela" src="src/assets/Bone.jpg" alt="Boné Corinthians"></a>
+          <h3>Boné Corinthians</h3>
+          <p>Boné clássico com bordado do escudo.</p>
+          <p class="preco">R$ 59,90</p>
+          <a class="botao-comprar" href="pages/produtos.html">Comprar</a>
+        </article>
+
+        <article class="card">
+          <a href="pages/produtos.html"><img class="img-tabela" src="src/assets/Retrô.jpg" alt="Camisa Corinthians 2"></a>
+          <h3>Camisa Retrô</h3>
+          <p>Edição retrô em algodão premium.</p>
+          <p class="preco">R$ 249,90</p>
+          <a class="botao-comprar" href="pages/produtos.html">Comprar</a>
+        </article>
+
+        <article class="card">
+          <a href="pages/produtos.html"><img class="img-tabela" src="src/assets/Jaqueta.jpg" alt="Jaqueta Corinthians"></a>
+          <h3>Jaqueta Oficial</h3>
+          <p>Jaqueta cortavento com forro leve.</p>
+          <p class="preco">R$ 299,90</p>
+          <a class="botao-comprar" href="pages/produtos.html">Comprar</a>
+        </article>
+
+        <article class="card">
+          <a href="pages/produtos.html"><img class="img-tabela" src="src/assets/Cachecol.jpg" alt="Cachecol Corinthians"></a>
+          <h3>Cachecol</h3>
+          <p>Cachecol Oficial Corinthians.</p>
+          <p class="preco">R$ 49,90</p>
+          <a class="botao-comprar" href="pages/produtos.html">Comprar</a>
+        </article>
+
+        <article class="card">
+          <a href="pages/produtos.html"><img class="img-tabela" src="src/assets/Pre-jogo.jpg" alt="Camisa Pré-Jogo Oficial."></a>
+          <h3>Camisa Pre-Jogo.</h3>
+          <p>Camisa Pre-Jogo Oficial 2024.</p>
+          <p class="preco">R$ 129,90</p>
+          <a class="botao-comprar" href="pages/produtos.html">Comprar</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="theme-buttons">
+      <p>Mudar destaque:</p>
+      <button class="theme-btn" data-color="#d4002a">Vermelho</button>
+      <button class="theme-btn" data-color="#000000">Preto</button>
+      <button class="theme-btn" data-color="#777777">Cinza</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Contato: loja@corinthians-exemplo.com</p>
+      <p>Telefone: (11) 4000-0000</p>
+    </div>
+    <p>© 2025 Loja do Corinthians — Trabalho FIAP</p>
+  </footer>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
